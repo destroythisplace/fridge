@@ -5,4 +5,9 @@ defmodule FridgeTest do
   test "greets the world" do
     assert Fridge.hello() == :world
   end
+
+  test "Graph is available." do
+    assert Graph.new
+  end
+
 end
