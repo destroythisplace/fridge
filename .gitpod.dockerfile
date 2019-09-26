@@ -58,8 +58,8 @@ RUN cd \
     && ~/.asdf/bin/asdf global elixir $VERSION_ELIXIR
 
 RUN cd \
-    && ~/.asdf/bin/asdf plugin-add gleam https://github.com/vic/asdf-gleam.git
-    && ~/.asdf/bin/asdf install gleam $VERSION_GLEAM
+    && ~/.asdf/bin/asdf plugin-add gleam https://github.com/vic/asdf-gleam.git \
+    && ~/.asdf/bin/asdf install gleam $VERSION_GLEAM \
     && ~/.asdf/bin/asdf global gleam $VERSION_GLEAM
 
 
