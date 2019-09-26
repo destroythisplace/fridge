@@ -13,7 +13,7 @@ ENV REFRESHED_AT=2019-09-29 \
     TERM=xterm \
     VERSION_ERLANG=22.1 \
     VERSION_ELIXIR=1.9.1-otp-22 \
-    VERSION_GLEAM 0.4.0
+    VERSION_GLEAM=0.4.0
 
 # Install custom tools, runtime, etc.
 RUN apt-get update \
