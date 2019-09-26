@@ -8,11 +8,12 @@ USER root
 # is updated with the current date. It will force refresh of all
 # of the base images and things like `apt-get update` won't be using
 # old cached versions when the Dockerfile is built.
-ENV REFRESHED_AT=2019-07-12 \
+ENV REFRESHED_AT=2019-09-29 \
     LANG=en_US.UTF-8 \
     TERM=xterm \
-    ERLANG_VERSION=22.1 \
-    ELIXIR_VERSION=1.9.1-otp-22
+    VERSION_ERLANG=22.1 \
+    VERSION_ELIXIR=1.9.1-otp-22 \
+    VERSION_GLEAM 0.4.0
 
 # Install custom tools, runtime, etc.
 RUN apt-get update \
@@ -48,13 +49,19 @@ RUN cd \
     # CUSTOM // install erlang/elixir
 RUN cd \
     && ~/.asdf/bin/asdf plugin-add erlang \
-    && ~/.asdf/bin/asdf install erlang $ERLANG_VERSION \
-    && ~/.asdf/bin/asdf global erlang $ERLANG_VERSION
+    && ~/.asdf/bin/asdf install erlang $VERSION_ERLANG \
+    && ~/.asdf/bin/asdf global erlang $VERSION_ERLANG
 
 RUN cd \
     && ~/.asdf/bin/asdf plugin-add elixir \
-    && ~/.asdf/bin/asdf install elixir $ELIXIR_VERSION \
-    && ~/.asdf/bin/asdf global elixir $ELIXIR_VERSION
+    && ~/.asdf/bin/asdf install elixir $VERSION_ELIXIR \
+    && ~/.asdf/bin/asdf global elixir $VERSION_ELIXIR
+
+RUN cd \
+    && ~/.asdf/bin/asdf plugin-add gleam https://github.com/vic/asdf-gleam.git
+    && ~/.asdf/bin/asdf install gleam $VERSION_GLEAM
+    && ~/.asdf/bin/asdf global gleam $VERSION_GLEAM
+
 
 RUN echo "install" >> ~/install
 
