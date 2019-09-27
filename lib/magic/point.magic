@@ -1,0 +1,11 @@
+@point
+
+help: So
+code: news(name, gate_tuple, tube_tuple, block)
+
+data: Point (
+    name: nil,
+    gate: gate_tuple,
+    tube: tube_tuple,
+    block: block
+)

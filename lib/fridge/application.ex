@@ -4,11 +4,14 @@ defmodule Fridge.Application do
   @moduledoc false
 
   use Application
+  import Plug
 
-  def start(_type, _args) do
+  def start(type, args) do
+    # start Plug hook
+
     children = [
       # Starts a worker by calling: Fridge.Worker.start_link(arg)
-      # {Fridge.Worker, arg}
+      # Plug.Cowboy.child_spec(scheme: :http, plug: Fridge.Pipe, options: [port: 4001]),
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
