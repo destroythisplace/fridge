@@ -1,26 +1,5 @@
 # Example
 
-# graph
-## meta
-- help
-- bugs
-
-## core
-- data
-- tube
-- meta / note / label
-
-## more
-@base
-|
-@blob
-@code
-| @elixr
-@data
-#hash
-#trait
-
-# Kind
 comment = # or // or /* */
 nada    = nil or null or false
 true    = true or anything
@@ -46,7 +25,30 @@ process = $self
 keyword = <keyword> > spawns to graph
 
 
-# Example
+# Creating Stuff
+
 @space <message>
 
+Some regular text goes here and this is pretty much where the timeline ends up.
 
+
+# Random
+
+## meta
+- help
+- bugs
+
+## core
+- data
+- tube
+- meta / note / label
+
+## more
+@base
+|
+@blob
+@code
+| @elixr
+@data
+#hash
+#trait

@@ -1,6 +1,4 @@
-defmodule FridgeTest do
+defmodule MagicTest do
   use ExUnit.Case
-  doctest Fridge
-
-
+  
 end

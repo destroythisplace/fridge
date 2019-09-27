@@ -1,9 +1,5 @@
 defmodule Fridge.Pipe do
 
-end
-
-defmodule Fridge.Pipe.Plug do
-
   import Plug.Conn
 
   # todo: poll Space for orbits.
