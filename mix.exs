@@ -14,7 +14,7 @@ defmodule Fridge.MixProject do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
-      extra_applications: [:logger],
+      extra_applications: [:logger, :plug],
       mod: {Fridge.Application, []}
     ]
   end
@@ -25,7 +25,6 @@ defmodule Fridge.MixProject do
       # {:dep_from_hexpm, "~> 0.3.0"},
       # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
       {:libgraph, "~> 0.7"},
-      {:array, "~> 1.0"},
       {:plug, "~> 1.8"},
       {:flow, "~> 0.14.3"},
     ]

@@ -1,0 +1,9 @@
+@machine
+
+code: news(flow) > (flow)
+  #todo: compute the next of each flow
+  # broadcasting the result of the flow of space
+  # to the rest of the system.
+code: news(object) > (object)
+
+stop!

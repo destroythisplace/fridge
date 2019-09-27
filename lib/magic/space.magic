@@ -1,0 +1,19 @@
+@space Space
+@machine
+
+blob: freeze(space)
+
+stop!
+
+# react to `news` in space
+code: news(space, object) > (space, object)
+  # determinism
+
+  # a pure
+  (space, object) = @machine.news(space, object)
+stop!
+
+data: Space {
+  uuid: nil,
+  origin: Point
+}
