@@ -1,11 +1,12 @@
 @point
 
-help: So
-code: news(name, gate_tuple, tube_tuple, block)
+help: A place in Spacetime.
 
-data: Point (
+meta: Point (
     name: nil,
     gate: gate_tuple,
     tube: tube_tuple,
     block: block
 )
+
+code: news(name, gate_tuple, tube_tuple, block)
