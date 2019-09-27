@@ -9,4 +9,7 @@ meta: Point (
     block: block
 )
 
-code: news(name, gate_tuple, tube_tuple, block)
+code: news(name, gate_tuple, tube_tuple, block) do
+
+
+end
