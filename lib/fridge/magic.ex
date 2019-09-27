@@ -4,6 +4,7 @@ defmodule Magic do
     # todo:
   end
 
+  def meta(
   def code(point, block) do
     # todo: plot the code point into space
     # Space.news(point, block)
@@ -12,5 +13,5 @@ defmodule Magic do
   def stop!(flow) do
 
   end
-  
+
 end

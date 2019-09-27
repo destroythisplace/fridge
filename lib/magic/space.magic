@@ -1,19 +1,28 @@
-@space Space
-@machine
+@space
 
-blob: freeze(space)
+meta: Space () > (
+  uuid: nil,
+  frame:
+    origin: Point,
+    size: Struct,
+)
 
-stop!
+blob: defrost(space) do
+
+end
+
+blob: freeze(space) do
+
+end
 
 # react to `news` in space
-code: news(space, object) > (space, object)
+code: news(space, object) > (space, object) do
   # determinism
 
   # a pure
   (space, object) = @machine.news(space, object)
-stop!
+end
 
-data: Space {
-  uuid: nil,
-  origin: Point
-}
+data: status do
+ # todo: return the dynamic status of Space.
+end
