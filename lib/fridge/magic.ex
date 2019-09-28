@@ -7,11 +7,20 @@ defmodule Magic do
   Is this real or just fantasy?
   """
 
-  def __using__(source, opts) do
+  @example "EXAMPLE.md"
+  
+  def __using__(source, opts \\ nil) do
+    File.cwd!
+    |> Path.join(@example)
+    |> File.read!
+    |> Magic.meta
   end
 
-  def meta() do
-  # todo: some meta level stuff for the object.
+  def meta(text) do
+    # todo: some meta level stuff for the object.
+    IO.inspect text
+    
+    text
   end
 
   def code(point, block) do
