@@ -4,7 +4,6 @@ defmodule Fridge.Application do
   @moduledoc false
 
   use Application
-  import Plug
 
   def start(type, args) do
     # start Plug hook
