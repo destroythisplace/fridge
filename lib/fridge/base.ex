@@ -1,69 +1,69 @@
-defmodule Comment do
+defmodule Fridge.Comment do
 end
  
-defmodule Nada do
+defmodule Fridge.Nada do
 end
  
-defmodule True do
+defmodule Fridge.True do
 end
  
-defmodule Blah do
+defmodule Fridge.Blah do
 end
  
-defmodule Meta do
+defmodule Fridge.Meta do
 end
  
-defmodule Pipe do
+defmodule Fridge.Tube do
 end
  
-defmodule Atom do
+defmodule Fridge.Atom do
 end
  
-defmodule Number do
+defmodule Fridge.Number do
 end
  
-defmodule List do
+defmodule Fridge.List do
 end
  
-defmodule Tuple do
+defmodule Fridge.Tuple do
 end
  
-defmodule Point do
+defmodule Fridge.Point do
 end
  
-defmodule Struct do
+defmodule Fridge.Struct do
 end
  
-defmodule Block do
+defmodule Fridge.Block do
 end
  
-defmodule Blob do
+defmodule Fridge.Blob do
 end
  
-defmodule Code do
+defmodule Fridge.Code do
 end
  
-defmodule Data do
+defmodule Fridge.Data do
 end
  
-defmodule Time do
+defmodule Fridge.Time do
 end
  
-defmodule Space do
+defmodule Fridge.Space do
 end
  
-defmodule Object do
+defmodule Fridge.Object do
 end
  
-defmodule Graph do
+defmodule Fridge.Graph do
 end
  
-defmodule Regex do
+defmodule Fridge.Regex do
 end
  
-defmodule Process do
+defmodule Fridge.Process do
 end
  
-defmodule Keyword do
+defmodule Fridge.Keyword do
 end
  
