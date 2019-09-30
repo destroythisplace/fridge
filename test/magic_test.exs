@@ -1,6 +1,7 @@
-defmodule FridgeTest do
+defmodule MagicTest do
   use ExUnit.Case
-  doctest Fridge
 
-
+  test "Magic example." do
+    assert is_binary use Magic
+  end
 end

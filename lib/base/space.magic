@@ -1,19 +1,11 @@
 @space
 
-meta: Space () > (
-  uuid: nil,
-  frame:
-    origin: Point,
-    size: Struct,
+data: Space () > (
+  mass: String,
+  frame: Point,
+  origin: Point,
+  size: Struct,
 )
-
-blob: defrost(space) do
-
-end
-
-blob: freeze(space) do
-
-end
 
 # react to `news` in space
 code: news(space, object) > (space, object) do
@@ -23,6 +15,15 @@ code: news(space, object) > (space, object) do
   (space, object) = @machine.news(space, object)
 end
 
-data: status do
+code: status do
  # todo: return the dynamic status of Space.
+end
+
+
+blob: defrost(space) do
+
+end
+
+blob: freeze(space) do
+
 end
