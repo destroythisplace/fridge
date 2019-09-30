@@ -8,18 +8,30 @@ defmodule Magic do
   """
 
   @example "EXAMPLE.md"
-  
+
   def __using__(source, opts \\ nil) do
-    File.cwd!
+    action = [true, Time.utc_now]
+
+    # read the example text
+    cwd = File.cwd!
+    meta = %{
+      meta: [],
+      data: {:path, cwd},
+      data: {:source, source},
+    }
+
+    cwd
     |> Path.join(@example)
     |> File.read!
     |> Magic.meta
+
+    action = [action, {:meta, meta}]
   end
 
   def meta(text) do
     # todo: some meta level stuff for the object.
     IO.inspect text
-    
+
     text
   end
 
