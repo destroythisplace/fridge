@@ -2,7 +2,7 @@
 
 help: A place in Spacetime.
 
-meta: Point (
+data: Point (
     name: nil,
     gate: gate_tuple,
     tube: tube_tuple,

@@ -10,9 +10,15 @@ atom    = :atom or atom:
 number  = 1 or 1.0 or 1.0e8
 list    = [0, 1, 2] or [a, [], [_]]
 tuple   = (:tuple, meta, list)
+<<<<<<< HEAD
 struct  = #point()
 shape   = name(:gate_tuple) > (:tube_tuple)
 block   = block(shape, code)
+=======
+struct  = #point() // named or boxed tuple
+point   = name(:gate_tuple) > (:tube_tuple)
+block   = block(point, code)
+>>>>>>> Update syntax.
 blob    = "" or <<binary>>
 code    = code(gate) > (tube) or <do...end>
 data    = data
