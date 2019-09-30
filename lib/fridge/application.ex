@@ -11,7 +11,10 @@ defmodule Fridge.Application do
     children = [
       # Starts a worker by calling: Fridge.Worker.start_link(arg)
       Plug.Cowboy.child_spec(scheme: :http, plug: Fridge.Pipe, options: [port: 4001]),
+
       #Fridge.Light.shine(type, args),
+      
+      {Registry, keys: :duplicate, name: Fridge.Register},
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html

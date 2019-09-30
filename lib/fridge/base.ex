@@ -1,6 +1,11 @@
+defmodule Fridge.Action do
+    def action(action), do: action
+end
 
 defmodule Fridge.Nada do
     # nada    = nil or null or false
+
+    def action(action), do: action
 end
 
 defmodule Fridge.True do
@@ -36,13 +41,18 @@ end
 defmodule Fridge.Atom do
 end
 
+defmodule Fridge.Tuple do
+
+    # {:some, tuple}
+    def match(tuple) do
+    end
+
+end
+
 defmodule Fridge.Number do
 end
 
 defmodule Fridge.List do
-end
-
-defmodule Fridge.Tuple do
 end
 
 defmodule Fridge.Point do

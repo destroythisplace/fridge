@@ -1,9 +1,10 @@
 # Example
 
-action = (true, time, blah, blob)
+action  = (true, time, blah, blob)
 nada    = nil or null or false
 true    = true or anything
 atom    = :atom or atom:
+tuple   = (:tuple, meta, list)
 list    = [0, 1, 2] or [a, [], [_]]
 time    = $now or number
 tube    = |
@@ -13,7 +14,6 @@ tube    = pipe (gate <> tube) | or |> pass and forget
 comment = # or // or /* */
 number  = 1 or 1.0 or 1.0e8
 regex   = /.+/
-tuple   = (:tuple, meta, list)
 shape   = name(:gate_tuple) > (:tube_tuple)
 blob    = "" or <<binary>>
 code    = code(gate) > (tube) or <do...end>
