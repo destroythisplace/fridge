@@ -1,7 +1,6 @@
 # Example
 
-comment = # or // or /* */
-nada    = nil or null or false
+nada    = nil or null or false or nothing
 true    = true or anything
 blah    = _
 meta    = .
@@ -25,6 +24,7 @@ object  = #object(tuple)
 graph   = #Graph<property: whatever>
 regex   = /.+/
 process = $self
+comment = # or // or /* */
 keyword = <keyword> > spawns to graph
 
 
