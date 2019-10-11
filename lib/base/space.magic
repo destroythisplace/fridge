@@ -11,8 +11,9 @@ data: Space () > (
 code: news(space, object) > (space, object) do
   # determinism
 
-  # a pure
-  (space, object) = @machine.news(space, object)
+  # pipe the output
+  (space, object)
+  | @machine.news(space, object)
 end
 
 code: status do

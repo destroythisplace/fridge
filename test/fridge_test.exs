@@ -9,7 +9,10 @@ defmodule FridgeTest do
   # Primitive Universe
 
   test "Graph is available." do
-    assert Graph.new
+    assert Graph.new()
   end
 
+  test "Register is available." do
+    assert Process.whereis(Fridge.Register)
+  end
 end
