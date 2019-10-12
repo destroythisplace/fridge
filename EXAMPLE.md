@@ -1,10 +1,19 @@
 # Example
 
-nada    = nil or null or false or nothing
+none    = nil or null or false or nothing
 true    = true or anything that exists
+
+blob    = "" or <<binary>>
+code    = code(gate) > (tube) or <do...end>
+data    = data
+
 blah    = _ an anonymous thing that exists
 pipe    = | connect two or more things that exist
 meta    = . access inside a thing that exists
+
+time    = $now
+space   = Space
+object  = #object(tuple)
 
 atom    = :atom or atom:
 number  = 1 or 1.0 or 1.0e8
@@ -16,13 +25,6 @@ block   = block(point, code)
 struct  = #point()
 shape   = name(:gate_tuple) > (:tube_tuple)
 block   = block(shape, code)
-
-blob    = "" or <<binary>>
-code    = code(gate) > (tube) or <do...end>
-data    = data
-time    = $now
-space   = Space
-object  = #object(tuple)
 
 graph   = #Graph<property: whatever>
 regex   = /.+/

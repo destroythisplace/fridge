@@ -1,5 +1,6 @@
 defmodule Space do
-  # defstruct hash: nil
+  
+  defstruct hash: nil
 
   def space do
   end
@@ -15,4 +16,5 @@ defmodule Space do
 
   def energy do
   end
+  
 end

@@ -1,10 +1,10 @@
-defmodule Fridge.Nada do
-end
-
-defmodule Fridge.Comment do
+defmodule Fridge.None do
 end
 
 defmodule Fridge.True do
+end
+
+defmodule Fridge.Comment do
 end
 
 defmodule Fridge.Blah do
