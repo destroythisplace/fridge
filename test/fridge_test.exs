@@ -15,4 +15,5 @@ defmodule FridgeTest do
   test "Register is available." do
     assert Process.whereis(Fridge.Register)
   end
+  
 end

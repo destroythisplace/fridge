@@ -15,4 +15,9 @@ defmodule Fridge do
   def hello do
     :world
   end
+
+  def stuff do
+
+  end
+
 end

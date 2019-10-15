@@ -27,11 +27,11 @@ defmodule Fridge.MixProject do
 
       {:libgraph, "~> 0.7"},
       {:flow, "~> 0.14.3"},
-      
+
       {:plug_cowboy, "~> 2.1.0"},
       {:webassembly, "~> 0.6.1"},
-    
-      {:matrex, "~> 0.6"},
+
+      #{:matrex, "~> 0.6"},
     ]
   end
 end
